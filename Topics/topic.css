@@ -15,7 +15,7 @@
 
 @media (max-width: 1500px) {
     header {
-        position: static !important
+        position: static !important;
     }
     }
 
