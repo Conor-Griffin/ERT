@@ -53,7 +53,7 @@ header {
     border-bottom: 1px solid;
     border-top: 1px solid;
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     header {
         position: static !important;
     }
