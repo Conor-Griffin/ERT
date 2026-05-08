@@ -1,4 +1,9 @@
-h1, h2{
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
     color: black;
     text-align: center;
 }
@@ -15,7 +20,7 @@ a:hover {
 }
 .grid-container {
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 32px;
     }
@@ -47,17 +52,33 @@ a:hover {
 header {
     position: sticky;
     top: 0;
-    background-color: rgb(168, 166, 166);
+    background-color: #0d1b2a;
     text-align: center;
     padding:5px;
     border-bottom: 1px solid;
     border-top: 1px solid;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
     header {
         position: static !important;
     }
+    .grid-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      gap: 32px;
     }
+    }
+
+.grid-item {
+        font-size: 2rem;
+    }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -80,6 +101,13 @@ body {
 footer {
     text-align: left;
     padding: 10px;
-    background-color: rgb(168, 166, 166);
+    background-color: #0d1b2a;
     margin-top: 20px;
+    color:white
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
