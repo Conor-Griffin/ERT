@@ -67,13 +67,16 @@ header {
     header {
         position: static !important;
     }
-    .grid-container {
+    }
+
+@media (max-width: 600px) {
+   .grid-container {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
       gap: 32px;
     }
-    }
+}
 
 .grid-item {
         font-size: 2rem;
