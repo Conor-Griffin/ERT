@@ -8,15 +8,8 @@
             padding-top: 40px;
         }
     h1 {
-        color: black;
+        color: white;
         text-align: center;
-    }
-
-
-@media (max-width: 1500px) {
-    header {
-        position: static !important;
-    }
     }
 
 body {
@@ -31,22 +24,30 @@ body {
         margin: 0 auto;
         padding: 20px;
       }
-        header {
+
+      header {
     position: sticky;
     top: 0;
-    background-color: rgb(168, 166, 166);
+    background-color: #0d1b2a;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:5px 100px;
+    padding: 5px 100px;
     border-bottom: 1px solid #ddd;
+    color: white;
         }
+
+        @media (max-width: 768px) {
+    header {
+        position: static !important;
+    }
+    }
 
     nav a {
         margin: 0 10px;
         text-decoration: none;
-        color: black;
+        color: white;
     }
         nav a:hover {
             text-decoration: underline;
@@ -54,7 +55,38 @@ body {
 footer {
     text-align: left;
     padding: 10px;
-    background-color: rgb(168, 166, 166);
+    background-color: #0d1b2a;
     margin-top: 20px;
+    color: white;
 }
 
+.float-img-right {
+        float: right;
+        margin-left: 20px;
+        width: 300px;
+    }
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
