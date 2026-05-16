@@ -96,3 +96,30 @@ iframe {
   max-width: 560px;
   aspect-ratio: 16 / 9;
 }
+
+.hidden {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  top: 90px;
+  right: 15px;
+
+  background: #0D1B2A;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
