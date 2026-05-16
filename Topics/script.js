@@ -13,3 +13,10 @@ function checkAnswers() {
   document.getElementById("result").innerText =
     "You scored " + score + " out of 10!";
 }
+function toggleMenu() {
+
+  let menu = document.getElementById("menu");
+
+  menu.classList.toggle("hidden");
+
+}
