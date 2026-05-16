@@ -90,3 +90,9 @@ button {
 button:hover {
   background: #0056b3;
 }
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+}
