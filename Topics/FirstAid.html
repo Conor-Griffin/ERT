@@ -6,25 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="./topic.css">
     <style>
-     .float-img-right {
-        float: right;
-        margin-left: 20px;
-        width: 300px;
-    }
+    
     </style>
+<script src="script.js"defer></script>
 </head>
 <body>
     <header>
         <h1>First Aid</h1>
-         <nav>
-        <a href="../index.html">Home</a> |
-        <a href="./VerticalRescue.html">Vertical Rescue</a> |
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+         <nav id="menu" class="hidden">
+        <a href="../index.html">Home</a>
+        <a href="./FirstAid.html">First Aid</a>
         <a href="./FF.html">Firefighting</a>
+        <a href="./VerticalRescue.html">Vertical Rescue</a>
+        <a href="./RoadCrashRescue.html">Road Crash Rescue</a>
+        <a href="./ConfinedSpaceRescue.html">Confined Space Rescue</a>
+        <a href="./HAZMAT.html">HAZMAT</a>
+        <a href="./BA.html">Breathing Apparatus</a>
     </nav>
     </header>
     <div class="container">
 
-<p>4 Point plan:
+<p><h2>4 Point Plan:</h2>
     <ol>
         <li>Primary survey (DRSABCD)</li>
         <li>Vital sign survey</li>
@@ -34,7 +37,7 @@
 </p>
 
      <img src="../assets/Images/firstaid.png" alt="AVPU" width="400" class="float-img-right">
-    <p>DRSABCDE:
+    <p><h3>1. Primary Survey (DRSABCDE):</h3>
     <ul>
         <li>Danger: to self, others and patient. What might have caused their state?</li>
         <li>Response COWS and AVPU</li>
@@ -55,7 +58,7 @@
     </ul></p>
 
 <p>
-Normal Vital signs:
+<h3>2. Vital Sign Survey, typical normal values:</h3>
     <ul>
         <li>Pulse: 60-100 bpm</li>
         <li>Respirations: 12-20 breaths/min</li>
@@ -66,18 +69,22 @@ Normal Vital signs:
         <li>Pupil Size and Reactivity: 2-4 mm, PEARL (pupils equal and reactive to light)</li>
         <li>Capillary Refill Time: < 2-3 seconds</li>
     </ul>
-</P>
+  </p>
+
+
+<h3>3. Secondary Survey</h3>
+<p>Head to Toe Assessment including Inspection, Palpation, Auscultation.
+<ul>
+    <li>Inspect: Look for any visible injuries, bleeding, deformities, abnormalities or pain.</li>
+    <li>Palpate: Feel for any tenderness, swelling, or unusual masses.</li>
+    <li>Auscultate: Listen to breath sounds, heart sounds, and bowel sounds.</li>
+    <li>Compare: Look for any differences between the left and right sides of the body.</li>
+    <li>Functional Assessment: Get the casualty to push and pull against your hands to check for strength, and to wiggle fingers and toes to check for sensation.</li>
+    <li>Check for any medical alert jewellery or tattoos.</li>
+    <li>Minimise neck movement if spinal injury is suspected.</li>
+</ul>
 </p>
-<p>Patient Handover - SAMPLE:
-    <ul>
-        <li>Signs and Symptoms</li>
-        <li>Allergies</li>
-        <li>Medications</li>
-        <li>Past Medical History</li>
-        <li>Last Oral Intake - last ins and outs</li>
-        <li>Events Leading up to</li>
-    </ul>
-</p>
+
 <p>Pain Assessment - OPQRST:
     <ul>
         <li>Onset/origin</li>
@@ -88,7 +95,157 @@ Normal Vital signs:
         <li>Time</li>
     </ul>
 </p>
+<p>Patient Handover - SAMPLE, ask if possible, or get information from bystanders:
+    <ul>
+        <li>Signs and Symptoms</li>
+        <li>Allergies</li>
+        <li>Medications</li>
+        <li>Past Medical History</li>
+        <li>Last Oral Intake - last ins and outs</li>
+        <li>Events Leading up to</li>
+    </ul>
+</p>
+<h3>4. Oxygen, Position, Reassurance:</h3>
+<p>Provide supplemental oxygen if available and indicated. Typically ~15 L/min</p>
+<p>Position the patient accordingly to maximise breathing, circulation, comfort, injury management:
+  <ul>
+    <li>Unconscious and breathing: recovery position</li>
+    <li>Respiratory distress, chest pain: sitting up</li>
+    <li>Spinal injury: supine, immobilised</li>
+    <li>Shock: supine with legs elevated</li>
+  </ul>
+</p>
+<p>Reassure the patient and keep them calm.</p>
 </div>
+
+<div class="quiz-container">
+  <h2>First Aid Quiz</h2>
+
+<div class="question">
+    <p>1. What is the first step of the 4 Point Plan?</p>
+    <label><input type="radio" name="q1" value="1">Primary survey (DRSABCD)</label><br>
+    <label><input type="radio" name="q1" value="0">Vital sign survey</label><br>
+    <label><input type="radio" name="q1" value="0">Secondary survey</label><br>
+    <label><input type="radio" name="q1" value="0">Patient handover</label><br>
+</div>
+
+<div class="question">
+    <p>2. What does the “R” in DRSABCD stand for?</p>
+    <label><input type="radio" name="q2" value="0">Reassure</label><br>
+    <label><input type="radio" name="q2" value="1">Response</label><br>
+    <label><input type="radio" name="q2" value="0">Recovery</label><br>
+    <label><input type="radio" name="q2" value="0">Respiration</label><br>
+</div>
+
+<div class="question">
+    <p>3. What does AVPU stand for?</p>
+    <label><input type="radio" name="q3" value="1">Alert, Verbal, Pain responsive, Unresponsive</label><br>
+    <label><input type="radio" name="q3" value="0">Airway, Ventilation, Pulse, Unresponsive</label><br>
+    <label><input type="radio" name="q3" value="0">Alert, Voice, Pulse, Unconscious</label><br>
+    <label><input type="radio" name="q3" value="0">Assess, Verify, Protect, Understand</label><br>
+</div>
+
+<div class="question">
+    <p>4. How many breaths should you check for during breathing assessment?</p>
+    <label><input type="radio" name="q4" value="0">1 breath in 5 seconds</label><br>
+    <label><input type="radio" name="q4" value="1">2 breaths in 10 seconds</label><br>
+    <label><input type="radio" name="q4" value="0">5 breaths in 30 seconds</label><br>
+    <label><input type="radio" name="q4" value="0">10 breaths in 1 minute</label><br>
+</div>
+
+<div class="question">
+    <p>5. What is the correct CPR ratio?</p>
+    <label><input type="radio" name="q5" value="0">15 compressions : 2 breaths</label><br>
+    <label><input type="radio" name="q5" value="1">30 compressions : 2 breaths</label><br>
+    <label><input type="radio" name="q5" value="0">20 compressions : 5 breaths</label><br>
+    <label><input type="radio" name="q5" value="0">50 compressions : 2 breaths</label><br>
+</div>
+
+<div class="question">
+    <p>6. What is the normal adult pulse range?</p>
+    <label><input type="radio" name="q6" value="0">40-60 bpm</label><br>
+    <label><input type="radio" name="q6" value="1">60-100 bpm</label><br>
+    <label><input type="radio" name="q6" value="0">100-140 bpm</label><br>
+    <label><input type="radio" name="q6" value="0">120-160 bpm</label><br>
+</div>
+
+<div class="question">
+    <p>7. What is the normal oxygen saturation range?</p>
+    <label><input type="radio" name="q7" value="0">70-80%</label><br>
+    <label><input type="radio" name="q7" value="0">80-90%</label><br>
+    <label><input type="radio" name="q7" value="1">94-100%</label><br>
+    <label><input type="radio" name="q7" value="0">100-110%</label><br>
+</div>
+
+<div class="question">
+    <p>8. What does PEARL stand for?</p>
+    <label><input type="radio" name="q8" value="0">Pulse Equal And Respiratory Level</label><br>
+    <label><input type="radio" name="q8" value="1">Pupils Equal And Reactive to Light</label><br>
+    <label><input type="radio" name="q8" value="0">Patient Examination And Response Level</label><br>
+    <label><input type="radio" name="q8" value="0">Pressure Equal And Reflexive Limbs</label><br>
+</div>
+
+<div class="question">
+    <p>9. What does palpation involve?</p>
+    <label><input type="radio" name="q9" value="0">Listening to breath sounds</label><br>
+    <label><input type="radio" name="q9" value="1">Feeling for tenderness or swelling</label><br>
+    <label><input type="radio" name="q9" value="0">Looking for visible injuries</label><br>
+    <label><input type="radio" name="q9" value="0">Checking blood pressure</label><br>
+</div>
+
+<div class="question">
+    <p>10. What does the “Q” in OPQRST stand for?</p>
+    <label><input type="radio" name="q10" value="0">Quickness</label><br>
+    <label><input type="radio" name="q10" value="1">Quality</label><br>
+    <label><input type="radio" name="q10" value="0">Quantity</label><br>
+    <label><input type="radio" name="q10" value="0">Questioning</label><br>
+</div>
+
+<div class="question">
+    <p>11. What does the “A” in SAMPLE stand for?</p>
+    <label><input type="radio" name="q11" value="1">Allergies</label><br>
+    <label><input type="radio" name="q11" value="0">Assessment</label><br>
+    <label><input type="radio" name="q11" value="0">Airway</label><br>
+    <label><input type="radio" name="q11" value="0">Alertness</label><br>
+</div>
+
+<div class="question">
+    <p>12. What position should an unconscious but breathing patient be placed in?</p>
+    <label><input type="radio" name="q12" value="0">Sitting up</label><br>
+    <label><input type="radio" name="q12" value="1">Recovery position</label><br>
+    <label><input type="radio" name="q12" value="0">Standing</label><br>
+    <label><input type="radio" name="q12" value="0">Supine with legs elevated</label><br>
+</div>
+
+<div class="question">
+    <p>13. What position is recommended for a patient in shock?</p>
+    <label><input type="radio" name="q13" value="0">Sitting upright</label><br>
+    <label><input type="radio" name="q13" value="0">Recovery position</label><br>
+    <label><input type="radio" name="q13" value="1">Supine with legs elevated</label><br>
+    <label><input type="radio" name="q13" value="0">Prone position</label><br>
+</div>
+
+<div class="question">
+    <p>14. What oxygen flow rate is typically provided if oxygen is indicated?</p>
+    <label><input type="radio" name="q14" value="0">2 L/min</label><br>
+    <label><input type="radio" name="q14" value="0">5 L/min</label><br>
+    <label><input type="radio" name="q14" value="1">15 L/min</label><br>
+    <label><input type="radio" name="q14" value="0">25 L/min</label><br>
+</div>
+
+<div class="question">
+    <p>15. What should you minimise if a spinal injury is suspected?</p>
+    <label><input type="radio" name="q15" value="0">Arm movement</label><br>
+    <label><input type="radio" name="q15" value="1">Neck movement</label><br>
+    <label><input type="radio" name="q15" value="0">Leg movement</label><br>
+    <label><input type="radio" name="q15" value="0">Eye movement</label><br>
+</div>
+
+  <button onclick="checkAnswers()">Submit</button>
+
+  <p id="result"></p>
+</div>
+
 <footer>
     <p>Disclaimer: This website is for informational purposes only and is not affiliated with any registered training organization (RTO)</p>
 </footer>
