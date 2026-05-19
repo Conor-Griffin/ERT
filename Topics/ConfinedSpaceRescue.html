@@ -8,17 +8,21 @@
     <style>
         
     </style>
+    <script src="script.js"defer></script>
 </head>
 <body>
     <header>
         <h1>Confined Space Rescue</h1>
-         <nav>
-        <a href="../index.html">Home</a> |
-        <a href="./FirstAid.html">First Aid</a> |
-        <a href="./FF.html">Firefighting</a> |
-        <a href="./RoadCrashRescue.html">Road Crash Rescue</a> |
-        <a href="./VerticalRescue.html">Vertical Rescue</a> |
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <nav id="menu" class="hidden">
+        <a href="../index.html">Home</a>
+        <a href="./FirstAid.html">First Aid</a>
+        <a href="./FF.html">Firefighting</a>
+        <a href="./VerticalRescue.html">Vertical Rescue</a>
+        <a href="./RoadCrashRescue.html">Road Crash Rescue</a>
+        <a href="./ConfinedSpaceRescue.html">Confined Space Rescue</a>
         <a href="./HAZMAT.html">HAZMAT</a>
+        <a href="./BA.html">Breathing Apparatus</a>
     </nav>
     </header>
     <div class="container">
@@ -71,32 +75,250 @@ Toxic gases may lead to poisoning, exposure standards developed to help people w
 
 <p>
 <h3>Explosion</h3>
-<ul>
-<li> Explosive atmospheres may exist in the presence of flammable contaminants, once mixed with air to support combustion, when the balance is right and the mixture is ignited it can result in explosion.</li>
-<li>Lower explosive limit (LEL) – lowest gas concentration that can lead to an explosion in presence of air and ignition source. To permit entry to work in confined space, the %contaminant must be <5% of the LEL, if it raises during work it should ventilated and monitored, evacuation should occur at 10% of LEL. Rescues can be performed up to 10% of LEL</li> 
-<li>Upper Explosive Limit (UEL) – highest concentration of gas that can lead to explosion in presence of air and ignition source</li>
-</ul>
+  <ul>
+  <li>Explosive atmospheres may exist in the presence of flammable contaminants, once mixed with air to support combustion, when the balance is right and the mixture is ignited it can result in explosion.</li>
+  <li>Lower explosive limit (LEL) – lowest gas concentration that can lead to an explosion in presence of air and ignition source. To permit entry to work in confined space, the %contaminant must be <5% of the LEL, if it raises during work it should ventilated and monitored, evacuation should occur at 10% of LEL. Rescues can be performed up to 10% of LEL</li> 
+  <li>Upper Explosive Limit (UEL) – highest concentration of gas that can lead to explosion in presence of air and ignition source</li>
+  </ul>
+</p>
+
+<table>
+<tr>
+	<th>Gas</th>
+<th>Toxicity, danger</th>
+	<th>Smell</th>
+	<th>Density</th>
+</tr>
+<tr>
+	<td>H2S</td>
+	<td>
+	<ul>
+		<li> Very high, can cause respiratory paralysis</li>
+		<li> STEL=15ppm, IDLH=100ppm, lethal >300ppm. Personal alarm goes off at 10ppm (TWA)</li>
+		<li> LEL=4.3%, UEL=45%</li>
+	</ul>
+	</td>
+<td>
+	<ul>
+		<li> Can start to smell it at very low ppm (0.0005-0.3ppm)</li>
+		<li> Rotten eggs, but olfactory paralysis occurs at 100-150ppm so you can no longer smell it </li>
+	</ul>
+	</td>
+
+
+
+
+<td>
+	<ul>
+		<li> 1.19 – slightly heavier than air</li>
+		<li> can accumulate in low areas </li>
+	</ul>
+	</td>
+</tr>
+
+<tr>
+	<td>SO2</td>
+	<td>
+	<ul>
+		<li> Moderate, strong irritant of eyes, nose, throat, lungs</li>
+		<li> TWA=2PPM, STEL=5ppm, IDLH=100ppm</li>
+		<li> Non-flammable </li>
+	</ul>
+	</td>
+<td>
+	<ul>
+		<li> Sharp, choking, burnt-match / acidic </li>
+	</ul>
+	</td>
+
+<td>
+	<ul>
+		<li> 2.26 – heavier than air </li>
+		<li> collects in pits, low lying areas </li>
+	</ul>
+	</td>
+</tr>
+
+<tr>
+	<td>NH3</td>
+	<td>
+	<ul>
+		<li> Moderate, strong irritant of eyes, nose, throat, lungs</li>
+		<li> TWA=25ppm, STEL=35ppm, IDLH=300ppm</li>
+		<li> LEL=15%, UEL=28%</li>
+	</ul>
+	</td>
+<td>
+	<ul>
+		<li> Pungent, sharp, irritating </li>
+<li> detectable at 5–20 ppm </li>
+	</ul>
+	</td>
+
+<td>
+	<ul>
+		<li> 0.59 – lighter than air, disperses upwards </li>
+		<li> can accumulate under roofs, enclosed spaces if airflow is poor </li>
+	</ul>
+	</td>
+</tr>
+</table>
+
+<p>
+  <h2>Testing and making the atmosphere safe</h2>
+  <ul>
+    <li>Due to different densities of gases, stratification can occur within the confined space, therefore gas monitoring should be performed at all levels and all entry/exit points</li>
+    <li>If hot work is performed or if the space itself may give off contaminants, then continuous monitoring should be performed, otherwise at least at 15min intervals or as required</li>
+    <li>Ventilation</li>
+    <ul>
+      <li>Natural ventilation – relies on wind, natural dispersion, requires 2 openings on opposite ends of the space, best for low risk spaces</li>
+      <li>Mechanical, positive pressure ventilation – forces clean air in using fans and ducting</li>
+      <li>Mechanical, negative pressure ventilation – extracts contaminated air out using fans and ducting</li>
+      <li>Purging agents – inert gases such as nitrogen pumped into confined space to displace harmful gases. Oxygen must NOT be used as it increases the range of flammability (reduces LEL, increases UEL)</li>
+    </ul>
+  </ul>
 </p>
 
 <p>
-<h2>Testing and making the atmosphere safe</h2>
+<h3>Rescue systems</h3>
 <ul>
-	<li>Due to different densities of gases, stratification can occur within the confined space, therefore gas monitoring should be performed at all levels and all entry/exit points</li>
-<li>If hot work is performed or if the space itself may give off contaminants, then continuous monitoring should be performed, otherwise at least at 15min intervals or as required</li>
-<li>Ventilation</li>
-<ul>
-	<li>Natural ventilation – relies on wind, natural dispersion, requires 2 openings on opposite ends of the space, best for low risk spaces</li>
-	<li>Mechanical, positive pressure ventilation – forces clean air in using fans and ducting</li>
-<li>Mechanical, negative pressure ventilation – extracts contaminated air out using fans and ducting</li>
-<li>Purging agents – inert gases such as nitrogen pumped into confined space to displace harmful gases. Oxygen must NOT bed used as it increases the range of flammability (reduces LEL, increases UEL)</li>
-<li>AS2865:2009 prohibits compressed gas cylinders from being brought into confined spaces except compressed air </li>
+  <li>Non-entry rescue – preferred method, uses retrieval system to pull casualty out without anyone entering the space, requires a harness and retrieval line attached to a winch or tripod</li>
+  <li>Entry rescue – Pre-made 4:1 double pulley system to be used with the tripod in vertical rescue over manhole, use roll up stretcher to fit through manhole with spreader bar</li>
+  <li>Horizontal rescue – utilizing stretcher and possibly haulage system if neccessary to rescue through man hole near the ground</li>
+<br><iframe width="560" height="315" src="https://www.youtube.com/embed/7A3grJGS1VQ?si=KDeGsXiBUArzC4Zz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </ul>
-</ul>
-</p>
 </p>
 </div>
+
+<div class="quiz-container">
+  <h2>Confined Space Quiz</h2>
+
+ <div class="question">
+    <p>1. What is the safe oxygen range in a confined space?</p>
+    <label><input type="radio" name="q1" value="0">15% - 25%</label><br>
+    <label><input type="radio" name="q1" value="1">19.5% - 23.5%</label><br>
+    <label><input type="radio" name="q1" value="0">18% - 24%</label><br>
+    <label><input type="radio" name="q1" value="0">20% - 22%</label><br>
+</div>
+
+<div class="question">
+    <p>2. When is a person considered to have entered a confined space?</p>
+    <label><input type="radio" name="q2" value="0">When touching inside the space</label><br>
+    <label><input type="radio" name="q2" value="1">When their head or upper body enters</label><br>
+    <label><input type="radio" name="q2" value="0">When standing near the opening</label><br>
+    <label><input type="radio" name="q2" value="0">When using tools near the space</label><br>
+</div>
+
+<div class="question">
+    <p>3. Which of the following is considered hot work?</p>
+    <label><input type="radio" name="q3" value="0">Using a torch</label><br>
+    <label><input type="radio" name="q3" value="0">Electric grinding</label><br>
+    <label><input type="radio" name="q3" value="0">Oxy-cutting</label><br>
+    <label><input type="radio" name="q3" value="1">All of the above</label><br>
+</div>
+
+<div class="question">
+    <p>4. What percentage of confined space casualties are due to atmosphere?</p>
+    <label><input type="radio" name="q4" value="0">40%</label><br>
+    <label><input type="radio" name="q4" value="0">60%</label><br>
+    <label><input type="radio" name="q4" value="1">80%</label><br>
+    <label><input type="radio" name="q4" value="0">95%</label><br>
+</div>
+
+<div class="question">
+    <p>5. Which of the following can cause oxygen deficiency?</p>
+    <label><input type="radio" name="q5" value="0">Oxidation of metals</label><br>
+    <label><input type="radio" name="q5" value="0">Combustion</label><br>
+    <label><input type="radio" name="q5" value="0">Nitrogen purging</label><br>
+    <label><input type="radio" name="q5" value="1">All of the above</label><br>
+</div>
+
+<div class="question">
+    <p>6. What is hypoxia?</p>
+    <label><input type="radio" name="q6" value="0">Excess oxygen in the atmosphere</label><br>
+    <label><input type="radio" name="q6" value="1">A condition caused by low oxygen levels</label><br>
+    <label><input type="radio" name="q6" value="0">A type of gas detector</label><br>
+    <label><input type="radio" name="q6" value="0">A ventilation method</label><br>
+</div>
+
+<div class="question">
+    <p>7. Entry is prohibited above what oxygen concentration?</p>
+    <label><input type="radio" name="q7" value="0">21%</label><br>
+    <label><input type="radio" name="q7" value="0">22%</label><br>
+    <label><input type="radio" name="q7" value="1">23.5%</label><br>
+    <label><input type="radio" name="q7" value="0">24%</label><br>
+</div>
+
+<div class="question">
+    <p>8. What does TWA stand for?</p>
+    <label><input type="radio" name="q8" value="0">Total Warning Alarm</label><br>
+    <label><input type="radio" name="q8" value="1">Time Weighted Average</label><br>
+    <label><input type="radio" name="q8" value="0">Temporary Work Atmosphere</label><br>
+    <label><input type="radio" name="q8" value="0">Toxic Warning Alert</label><br>
+</div>
+
+<div class="question">
+    <p>9. What does IDLH stand for?</p>
+    <label><input type="radio" name="q9" value="1">Immediately Dangerous to Life or Health</label><br>
+    <label><input type="radio" name="q9" value="0">Internal Detection Limit Hazard</label><br>
+    <label><input type="radio" name="q9" value="0">Immediate Danger Level Hazard</label><br>
+    <label><input type="radio" name="q9" value="0">Industrial Dangerous Level Hazard</label><br>
+</div>
+
+<div class="question">
+    <p>10. What does LEL stand for?</p>
+    <label><input type="radio" name="q10" value="0">Lower Exposure Limit</label><br>
+    <label><input type="radio" name="q10" value="1">Lower Explosive Limit</label><br>
+    <label><input type="radio" name="q10" value="0">Low Emission Level</label><br>
+    <label><input type="radio" name="q10" value="0">Limited Explosion Level</label><br>
+</div>
+
+<div class="question">
+    <p>11. At what percentage of the LEL should evacuation occur?</p>
+    <label><input type="radio" name="q11" value="0">5%</label><br>
+    <label><input type="radio" name="q11" value="1">10%</label><br>
+    <label><input type="radio" name="q11" value="0">15%</label><br>
+    <label><input type="radio" name="q11" value="0">20%</label><br>
+</div>
+
+<div class="question">
+    <p>12. Why should gas monitoring be performed at all levels?</p>
+    <label><input type="radio" name="q12" value="0">To improve visibility</label><br>
+    <label><input type="radio" name="q12" value="1">Because gases can stratify at different levels</label><br>
+    <label><input type="radio" name="q12" value="0">To reduce humidity</label><br>
+    <label><input type="radio" name="q12" value="0">Because oxygen rises</label><br>
+</div>
+
+<div class="question">
+    <p>13. Which ventilation method forces clean air into the confined space?</p>
+    <label><input type="radio" name="q13" value="0">Natural ventilation</label><br>
+    <label><input type="radio" name="q13" value="1">Positive pressure ventilation</label><br>
+    <label><input type="radio" name="q13" value="0">Negative pressure ventilation</label><br>
+    <label><input type="radio" name="q13" value="0">Hydraulic ventilation</label><br>
+</div>
+
+<div class="question">
+    <p>14. Why must oxygen NOT be used as a purging agent?</p>
+    <label><input type="radio" name="q14" value="0">It damages gas detectors</label><br>
+    <label><input type="radio" name="q14" value="1">It increases the flammability range</label><br>
+    <label><input type="radio" name="q14" value="0">It cools the atmosphere too quickly</label><br>
+    <label><input type="radio" name="q14" value="0">It causes corrosion</label><br>
+</div>
+
+<div class="question">
+    <p>15. According to AS2865:2009, which compressed gas cylinders are allowed in confined spaces?</p>
+    <label><input type="radio" name="q15" value="0">Oxygen cylinders</label><br>
+    <label><input type="radio" name="q15" value="0">Nitrogen cylinders</label><br>
+    <label><input type="radio" name="q15" value="1">Compressed air cylinders</label><br>
+    <label><input type="radio" name="q15" value="0">Acetylene cylinders</label><br>
+</div>
+
+  <button onclick="checkAnswers()">Submit</button>
+
+  <p id="result"></p>
+</div>
 <footer>
-    <p>Written by Conor Griffin</p>
+    <p>Disclaimer: This website is for informational purposes only and is not affiliated with any registered training organization (RTO)</p>
 </footer>
 </body>
 </html>
