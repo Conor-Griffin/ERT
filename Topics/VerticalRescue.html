@@ -8,63 +8,68 @@
     <style>
       
     </style>
+    <script src="script.js"defer></script>
 </head>
 <body>
 <header>
     <h1>Vertical Rescue</h1>
-    <nav>
-        <a href="../index.html">Home</a> |
-        <a href="./FirstAid.html">First Aid</a> |
-        <a href="./FF.html">Firefighting</a> |
-        <a href="./RoadCrashRescue.html">Road Crash Rescue</a> |
-        <a href="./ConfinedSpaceRescue.html">Confined Space Rescue</a> |
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <nav id="menu" class="hidden">
+        <a href="../index.html">Home</a>
+        <a href="./FirstAid.html">First Aid</a>
+        <a href="./FF.html">Firefighting</a>
+        <a href="./VerticalRescue.html">Vertical Rescue</a>
+        <a href="./RoadCrashRescue.html">Road Crash Rescue</a>
+        <a href="./ConfinedSpaceRescue.html">Confined Space Rescue</a>
         <a href="./HAZMAT.html">HAZMAT</a>
+        <a href="./BA.html">Breathing Apparatus</a>
     </nav>
 </header>
 <div class="container">
 
-<p> 
-    <ol>
-        <li>Response preparation</li>
-        
-            <ul>
-                <li>SITREP – situation report from originator</li>
-                <li>SMEAC is used to deliver orders to the rescue team
+<p>
+<h2>Response preparation</h2>
+                <h3>SMEAC is used to deliver orders to the rescue team</h3>
                     <ul>
-                        <li>Situation – derived from SITREP, defines casualty numbers and medical status, any risks that may impede rescue</li>
-                        <li>Mission – single purpose statement about how the rescue will be performed, repeated twice</li>
-                        <li>Execution – defines who is doing what task</li>
-                        <li>Admin/logistics – defines equipment required etc</li>
-                        <li>Command, control and communication – defines who’s OIC, 2IC, radio channels and other comms</li>
+                    <li>Situation – derived from SITREP, defines casualty numbers and medical status, any risks that may impede rescue</li>
+                    <li>Mission – single purpose statement about how the rescue will be performed, repeated twice</li>
+                    <li>Execution – defines who is doing what task</li>
+                    <li>Admin/logistics – defines equipment required etc</li>
+                    <li>Command, control and communication – defines who’s OIC, 2IC, radio channels and other comms</li>
                     </ul>
-                </li>
-                <li>Equipment
+                <h3>Equipment</h3>
                     <ul>
                         <li>Fall arrest systems - lanyards, rail etc</li>
                         <li>Stretchers - basket stretcher or roll up stretcher</li>
                         <li>Bridle - adjustable buckles allow you to adjust the angle of the stretcher</li>
                         <li>Larkin frame - used at the edge of cliff/hole/pit. Leans over</li>
-                        <li>Tripod - used above a manhole in a confined space rescue, use roll up stretcher to get patient out</li>
+                    <br><img src="../assets/images/Larkin.png" alt="Larkin Frame" height="300">
+                        <br><br><li>Tripod - used above a manhole in a confined space rescue, use roll up stretcher to get patient out</li>
                         <li>GOTCHA kit - when casualty is suspended in the air, you use a telescopic pole to connect them to a pre-rigged haulage system, can raise or lower them out</li>
+                    <br><iframe width="560" height="315" src="https://www.youtube.com/embed/2eSVBeVCM0U?si=Jg9-z5nztXUDyE40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </ul>
-                </li>
-                <li>Hardware – Karabiners, descenders, ascenders, pulleys
-                    <ol>
+</p>
+
+<p>
+<h2>Hardware and Software</h2>
+                <h3>Hardware – Karabiners, descenders, ascenders, pulleys</h3>
+                    <ul>
                         <li>Karabiners must be double or triple action, loaded longways, screw type should be facing down such that it wont be loosened by gravity</li>
                         <li>In line descenders – friction devices that allow rope to pass through – ensure loaded in correct direction</li>
                         <li>Ascenders – one way travel on a rope line, for single person ascent or as a rope grab device in hauling systems</li>
                         <li>Pulleys – reduce rope friction, allow redirection, lower stretchers and/or provide mechanical advantage, can be single, double or triple sheave</li>
-                    </ol>
+                    </ul>
                 </li>
-                <li>Software
-                    <ol>
-                        <li>Rope – kern(core)mantle(sheath) construction. Min 11mm max 13mm diameter. 3000kg breaking strain, 8:1 safety factor, SWL fo 375kg, static type. Dynamic (stretchy) rope is not used for rescue. If site used 13mm rope, hardware MUST be for 13mm. must be inspected before, during, after use and at 6 monthly intervals. Edge protection should be used to prevent damage to rope, from sharp edges/friction</li>
+                <h3>Software</h3>
+                    <ul>
+                        <li>Rope – kern(core)mantle(sheath) construction. Min 11mm max 13mm diameter. 3000kg breaking strain, 8:1 safety factor, SWL of 375kg, static type. Dynamic (stretchy) rope is not used for rescue. If site used 13mm rope, hardware MUST be for 13mm. must be inspected before, during, after use and at 6 monthly intervals. Edge protection should be used to prevent damage to rope, from sharp edges/friction</li>
                         <li>Harnesses – any attachments for abseiling/belaying must be made to front attachment point (belay loop), waist loops are only designed to hang ancillary equipment, not the persons weight</li>
                         <li>Slings – used in conjunction with karabiners to attach to an anchor, slings should not be choked</li>
-                    </ol>
-                </li>
-            </ul>
-        <li>Scene assessment</li>
+                    </ul>
+</p>
+
+<p>
+<h2>Scene assessment</h2>
             <ul>
                 <li>Rescue scene reconnaissance - check maps, weather etc on route</li>
                 <li>Location and condition of casualties – triage, first aid</li>
@@ -72,64 +77,206 @@
                 <li>Scene management and control – secure scene with cones, tape, barricading, preserve the scene for later incident investigation, access to scene, move non essential people to a waiting area</li>
                 <li>Establishing and maintaining communications – using voice, hand signals, radio, standard calls should be known by team such as ‘ready on safety’, ‘ARCHER(gear) check’, ‘check complete’, ‘ready on rope/ready on main’, ‘take the strain’, ‘give some slack’, ‘raise’, ‘below’. Hand signals: finger pointed up moving in circular motion means raise, while hand full extended, palm down, motioning side to side means lower. Hand out means stop. </li>
             </ul>
-        <li>Establish a rescue system</li>
-        <ul>
-            <li>Pre-made 4:1 to be used with the tripod in vertical rescue over manhole, use roll up stretcher to fit through manhole with spreader bar</li>
-            <li>ARCHER checks
-                <ul>
+</p>
+
+<p>
+<h2>Establish a rescue system</h2>
+            Use Tripod, GOTCHA KIT, Larkin frame or just stretcher depending on situation
+            <h3>ARCHER checks</h3>
+                <ol>
                     <li>Anchors  - most common failure point. Slings should ideally be at less than 90deg angle and NEVER more than 120deg if load is shared between 2 anchor points. Anchor points tested with 2 people pulling/using body weight.
-                        <ol>
+                        <ul>
                             <li>Natural – trees, rocks</li>
                             <li>Man-made/structural – buildings, beams, columns</li>
                             <li>Improvised – star pickets, buried tyres</li>
                             <li>Vehicles – Firetruck wheels, keys removed, parked perpendicular, wheels chocked, brake on</li>
-                        </ol>
+                        </ul>
                     </li>
-                    <li>Ropes and reeving – check condition, ropes aren’t crossed, reeved through descender correctly, check for edge protection</li>
+                    <li>Ropes and reeving – check condition, knots tied and dressed correctly, ropes aren’t crossed, reeved through descender correctly, check for edge protection</li>
+                    <ul>
+                        <li>Figure 8 on a bight - creates a loop at the end of a rope</li>
+                        <li>Alpine butterfly knot - creates a loop in the middle of a rope</li>
+                        <li>Bunny ears knot - creates two loops at the end of a rope, adjustable and ideal for escorting stretcher</li>
+                        <li>Barrel knot - Stopper knot, prevents rope from slipping through a device</li>
+                    </ul>
                     <li>Connections – karabiners, gates closed and aligned properly, gravity should tighten</li>
                     <li>H - 4H’s - Helmet, harness, hands (gloves), hooves (shoes)</li>
-                    <li>Equipment – equipment attached, secured correctly, may need grab bag items or stretcher, equipment tested under load</li>
-                    <li>Ready on rope – ‘ready on main’ + ‘ready on safety’</li>
-                </ul>
-            </li>
-            <li>Rescue techniques:
+                    <li>Equipment – equipment attached (may need grab bag, stretcher, torch, extra crabs), secured correctly, tested under load</li>
+                    <li>Ready on rope – ‘ready on main’ + ‘ready on safety’ communicated by descender operators</li>
+                </ol>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ycsfanbmTI0?si=n8-yMWg4u_J-qWEF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h3>Rescue techniques:</h3>
                 <ul>
                     <li>Belaying – belay line is the safety line, should always have a little slack, serves as a back up. Is always required.</li>
                     <li>Abseiling – going down a rope rather than the rope moving, pace is controlled by the person abseiling, using descender (clutch brake) to gradually fall down. Don’t go too fast as this can heat/damage the rope</li>
                     <li>Lowering – achieved by inverting a rigged descender that is attached to a secure anchor point. Someone else lowers the rescuer/casualty, tag lines can also be used from ground to control casualty</li>
                     <li>Hauling – main haul line pulled through the in line descender and usually in a mechanical advantage pulley system with an ascender. Slack must be taken up by the person on the belay (safety) line as haulage is occurring. Common is 3:1 or 5:1 mechanical advantage</li>
                 </ul>
-            </li>
-            <li>Mechanical advantage
+
+            <h3>Mechanical advantage</h3>
                 <ul>
                     <li>Pulleys that are permanently anchored or that change directions do NOT provide mechanical advantage, mechanical advantage is only gained by travelling pulleys</li>
                     <li>Calculating mechanical advantage – count the number of ropes that are supporting the load including the haulage line, but only if it is directed from the floating pulley, therefore pulling from a direction of mechanical advantage</li>
-                    <li>mechanical disadvantage – direction when pulling towards the load, whereas mechanical advantage is pulling away from the load</li>
+                    <li>Mechanical disadvantage – direction when pulling towards the load, whereas mechanical advantage is pulling away from the load</li>
                 </ul>
-            </li>
                  <img src="../assets/images/MA1.png" alt="Mechanical Advantage" height="350">
                  <img src="../assets/images/MA2.png" alt="Mechanical Advantage" height="350">
                  <img src="../assets/images/MA3.png" alt="Mechanical Advantage" height="350">
-        </ul>
-<li>Perform rescue</li>
+</p>
+
+<p>
+<h2>Perform rescue</h2>
 <ul>
     <li>Hygiene precautions – potential bodily fluids, wear nitrile gloves under rope gloves</li>
     <li>Access casualties – belaying, abseiling, lowering, hauling</li>
     <li>Casualty preparation – identify potential hazards to casualty, provide reassurance, prepare for removal, first aid treatment only to preserve life whilst on site, prepare them for removal. Basket or roll up stretcher may be used, with bridal or spreader bar</li>
     <li>Casualty handling – care with manual handling, proper technique, lift with legs. With suspected spinal, support neck/head and restrict movement, cross casualties arms and put stretcher to their side, then roll them to their side and slide the stretcher underneath them and roll them back onto it, secure casualty to stretcher with straps provided, rig up bridle.</li>
-    <li>Casualty removal – prepare to lift, lift.  Raise or lower stretcher to safety. Escort the stretcher to prevent swaying, comfort casualty, or at least use tag line. Be mindful of potential orthostatic shock (suspension trauma) where casualty has been suspended in a body harness for a prolonged period (5-30mins), as blood is pooling in lower body or casualty who are suspended and motionless, causing low blood pressure and possible unconsciousness. Can prevent this by moving legs in harness, push against foot holds, raise legs as high as possible, tilt back to become horizontal. Treatment is to administer oxygen, remove harness, lie casualty down</li>
-</li>
+    <li>Casualty removal – prepare to lift, lift.  Raise or lower stretcher to safety. Escort the stretcher to prevent swaying, comfort casualty, or at least use tag line.</li>
+    <li>Suspension Trauma – be mindful of potential orthostatic shock (suspension trauma)</li> 
+        <ul>
+            <li>where casualty has been suspended in a body harness for a prolonged period (5-30mins), as blood is pooling in lower body, causing low blood pressure and possible unconsciousness.</li>
+            <li>Can prevent this by moving legs in harness, push against foot holds, raise legs as high as possible, tilt back to become horizontal.</li>
+            <li>Treatment is to administer oxygen, remove harness, lie casualty down</li>
+        </ul>
+    </li>
 </ul>
-<li>Conclude Rescue Operations</li>
+</p>
+
+<p>
+<h2>Conclude Rescue Operations</h2>
 <ul>
     <li>Debriefing – discuss what went well, what could be improved, and any lessons learned</li>
     <li>Equipment check – inspect all equipment for damage and ensure it is properly stored. Ropes may need to be washed, if so use rope wash in sink, air dry. If hardware dropped from height, place it OOS.</li>
     <li>Debriefing – discuss what went well, what could be improved, and any lessons learned, psychological review, revision and implementation of techniques/procedures</li>
     <li>Documentation – document the rescue operation, dated/timed contemporaneous notes, amendments to be initialled, retained for 7 years including any incidents or injuries</li>
-</ul>
-</ol>
-	
+</ul>	
 </p>
+</div>
+
+<div class="quiz-container">
+    <h2>Vertical Rescue Quiz</h2>
+<div class="question">
+    <p>1. What does SITREP stand for?</p>
+    <label><input type="radio" name="q1" value="1">Situation report</label><br>
+    <label><input type="radio" name="q1" value="0">Safety response plan</label><br>
+    <label><input type="radio" name="q1" value="0">Site rescue procedure</label><br>
+    <label><input type="radio" name="q1" value="0">Standard incident report</label><br>
+</div>
+
+<div class="question">
+    <p>2. What is a tripod commonly used for in vertical rescue?</p>
+    <label><input type="radio" name="q2" value="0">Roof rescue</label><br>
+    <label><input type="radio" name="q2" value="1">Confined space rescue over a manhole</label><br>
+    <label><input type="radio" name="q2" value="0">Vehicle stabilisation</label><br>
+    <label><input type="radio" name="q2" value="0">Water rescue</label><br>
+</div>
+
+<div class="question">
+    <p>3. What type of rope is used in vertical rescue?</p>
+    <label><input type="radio" name="q3" value="0">Dynamic rope</label><br>
+    <label><input type="radio" name="q3" value="1">Static kernmantle rope</label><br>
+    <label><input type="radio" name="q3" value="0">Elastic rope</label><br>
+    <label><input type="radio" name="q3" value="0">Polypropylene rope</label><br>
+</div>
+
+<div class="question">
+    <p>4. What is the minimum rope diameter used for rescue?</p>
+    <label><input type="radio" name="q4" value="0">8mm</label><br>
+    <label><input type="radio" name="q4" value="0">10mm</label><br>
+    <label><input type="radio" name="q4" value="1">11mm</label><br>
+    <label><input type="radio" name="q4" value="0">15mm</label><br>
+</div>
+
+<div class="question">
+    <p>5. Where should abseiling attachments be connected on a harness?</p>
+    <label><input type="radio" name="q5" value="0">Waist loops</label><br>
+    <label><input type="radio" name="q5" value="1">Front attachment point (belay loop)</label><br>
+    <label><input type="radio" name="q5" value="0">Shoulder straps</label><br>
+    <label><input type="radio" name="q5" value="0">Leg loops only</label><br>
+</div>
+
+<div class="question">
+    <p>6. What should the angle between shared anchor slings ideally be?</p>
+    <label><input type="radio" name="q6" value="0">Less than 30 degrees</label><br>
+    <label><input type="radio" name="q6" value="1">Less than 90 degrees</label><br>
+    <label><input type="radio" name="q6" value="0">Exactly 120 degrees</label><br>
+    <label><input type="radio" name="q6" value="0">More than 150 degrees</label><br>
+</div>
+
+<div class="question">
+    <p>7. What device allows one-way travel on a rope line?</p>
+    <label><input type="radio" name="q7" value="0">Descender</label><br>
+    <label><input type="radio" name="q7" value="1">Ascender</label><br>
+    <label><input type="radio" name="q7" value="0">Karabiner</label><br>
+    <label><input type="radio" name="q7" value="0">Larkin frame</label><br>
+</div>
+
+<div class="question">
+    <p>8. What is the purpose of a belay line?</p>
+    <label><input type="radio" name="q8" value="0">To increase speed of descent</label><br>
+    <label><input type="radio" name="q8" value="1">To act as a safety backup line</label><br>
+    <label><input type="radio" name="q8" value="0">To secure tools only</label><br>
+    <label><input type="radio" name="q8" value="0">To replace the main line</label><br>
+</div>
+
+<div class="question">
+    <p>9. What rescue technique involves the rescuer controlling their own descent?</p>
+    <label><input type="radio" name="q9" value="0">Hauling</label><br>
+    <label><input type="radio" name="q9" value="1">Abseiling</label><br>
+    <label><input type="radio" name="q9" value="0">Belaying</label><br>
+    <label><input type="radio" name="q9" value="0">Rigging</label><br>
+</div>
+
+<div class="question">
+    <p>10. What type of pulley provides mechanical advantage?</p>
+    <label><input type="radio" name="q10" value="0">Anchored pulley</label><br>
+    <label><input type="radio" name="q10" value="0">Direction-changing pulley</label><br>
+    <label><input type="radio" name="q10" value="1">Travelling pulley</label><br>
+    <label><input type="radio" name="q10" value="0">Fixed pulley</label><br>
+</div>
+
+<div class="question">
+    <p>11. What is the mechanical advantage in a common z-line system?</p>
+    <label><input type="radio" name="q11" value="0">1:1</label><br>
+    <label><input type="radio" name="q11" value="1">3:1</label><br>
+    <label><input type="radio" name="q11" value="0">5:1</label><br>
+    <label><input type="radio" name="q11" value="0">10:1</label><br>
+</div>
+
+<div class="question">
+    <p>12. What condition can occur from prolonged suspension in a harness?</p>
+    <label><input type="radio" name="q12" value="0">Heat stroke</label><br>
+    <label><input type="radio" name="q12" value="1">Orthostatic shock</label><br>
+    <label><input type="radio" name="q12" value="0">Hypothermia</label><br>
+    <label><input type="radio" name="q12" value="0">Decompression sickness</label><br>
+</div>
+
+<div class="question">
+    <p>13. What knot is adjustable and ideal for escorting a stretcher?</p>
+    <label><input type="radio" name="q15" value="0">Barrel knot</label><br>
+    <label><input type="radio" name="q15" value="0">Figure 8 on a bight</label><br>
+    <label><input type="radio" name="q15" value="0">Alpine butterfly knot</label><br>
+    <label><input type="radio" name="q15" value="1">Bunny ears knot</label><br>
+</div>
+
+<div class="question">
+    <p>14. What should happen if rescue hardware is dropped from height?</p>
+    <label><input type="radio" name="q14" value="0">Continue using it</label><br>
+    <label><input type="radio" name="q14" value="0">Wash it immediately</label><br>
+    <label><input type="radio" name="q14" value="1">Place it out of service (OOS)</label><br>
+    <label><input type="radio" name="q14" value="0">Paint it for identification</label><br>
+</div>
+
+<div class="question">
+    <p>15. Which of these knots is used to create a loop in the middle of a rope?</p>
+    <label><input type="radio" name="q15" value="0">Barrel knot</label><br>
+    <label><input type="radio" name="q15" value="0">Figure 8 on a bight</label><br>
+    <label><input type="radio" name="q15" value="1">Alpine butterfly knot</label><br>
+    <label><input type="radio" name="q15" value="0">Bunny ears knot</label><br>
+</div>
+        <button onclick="checkAnswers()">Submit</button>
+    <p id="result"></p>
 </div>
 <footer>
     <p>Disclaimer: This website is for informational purposes only and is not affiliated with any registered training organization (RTO)</p>
