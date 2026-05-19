@@ -6,21 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="./topic.css">
     <style>
-		 table, th, td {
-    border: 1px solid black;
-  }
     </style>
+	<script src="script.js"defer></script>
 </head>
 <body>
 	 <header>
  <h1>HAZMAT</h1>
-  <nav>
-        <a href="../index.html">Home</a> |
-        <a href="./FirstAid.html">First Aid</a> |
-        <a href="./FF.html">Firefighting</a> |
-        <a href="./RoadCrashRescue.html">Road Crash Rescue</a> |
-        <a href="./ConfinedSpaceRescue.html">Confined Space Rescue</a> |
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <nav id="menu" class="hidden">
+		<a href="../index.html">Home</a>
+        <a href="./FirstAid.html">First Aid</a>
+        <a href="./FF.html">Firefighting</a>
         <a href="./VerticalRescue.html">Vertical Rescue</a>
+        <a href="./RoadCrashRescue.html">Road Crash Rescue</a>
+        <a href="./ConfinedSpaceRescue.html">Confined Space Rescue</a>
+        <a href="./HAZMAT.html">HAZMAT</a>
+		<a href="./BA.html">Breathing Apparatus</a>
     </nav>
 	</header>
 	<div class="container">
@@ -114,118 +115,134 @@
         <li>Class 7: Radioactive material</li>
         <li>Class 8: Corrosive substances</li>
         <li>Class 9: Miscellaneous dangerous goods</li>
-    </ul></p>
-
-<table>
-<tr>
-	<th>Gas</th>
-<th>Toxicity, danger</th>
-	<th>Smell</th>
-	<th>Density</th>
-	<th>Source</th>
-</tr>
-<tr>
-	<td>H2S</td>
-	<td>
-	<ul>
-		<li> Very high, can cause respiratory paralysis</li>
-		<li> STEL=15ppm, IDLH=100ppm, lethal >300ppm. Personal alarm goes off at 10ppm (TWA)</li>
-		<li> LEL=4.3%, UEL=45%</li>
-	</ul>
-	</td>
-<td>
-	<ul>
-		<li> Can start to smell it at very low ppm (0.0005-0.3ppm)</li>
-		<li> Rotten eggs, but olfactory paralysis occurs at 100-150ppm so you can no longer smell it </li>
-	</ul>
-	</td>
-
-
-
-
-<td>
-	<ul>
-		<li> 1.19 – slightly heavier than air</li>
-		<li> can accumulate in low areas </li>
-	</ul>
-	</td>
-
-<td>
-	<ul>
-		<li> 3400 – pre-reduction</li>
-		<li> 3500 – sulphide prep</li>
-<li> 3600 – sulphide leaching</li>
-		<li> 3300 (from NBL line if insufficient H202)</li>
-	</ul>
-	</td>
-</tr>
-<tr>
-	<td>SO2</td>
-	<td>
-	<ul>
-		<li> Moderate, strong irritant of eyes, nose, throat, lungs</li>
-		<li> TWA=2PPM, STEL=5ppm, IDLH=100ppm</li>
-		<li> Non-flammable </li>
-	</ul>
-	</td>
-<td>
-	<ul>
-		<li> Sharp, choking, burnt-match / acidic </li>
-	</ul>
-	</td>
-
-<td>
-	<ul>
-		<li> 2.26 – heavier than air </li>
-		<li> collects in pits, low lying areas </li>
-	</ul>
-	</td>
-
-<td>
-	<ul>
-		<li> 4100 - Acid plant stack</li>
-		<li> 5700 – vent flare</li>
-<li> Sulfur pit fires </li>
-	</ul>
-	</td>
-</tr>
-
-<tr>
-	<td>NH3</td>
-	<td>
-	<ul>
-		<li> Moderate, strong irritant of eyes, nose, throat, lungs</li>
-		<li> TWA=25ppm, STEL=35ppm, IDLH=300ppm</li>
-		<li> LEL=15%, UEL=28%</li>
-	</ul>
-	</td>
-<td>
-	<ul>
-		<li> Pungent, sharp, irritating </li>
-<li> detectable at 5–20 ppm </li>
-	</ul>
-	</td>
-
-<td>
-	<ul>
-		<li> 0.59 – lighter than air, disperses upwards </li>
-		<li> can accumulate under roofs, enclosed spaces if airflow is poor </li>
-	</ul>
-	</td>
-
-<td>
-	<ul>
-		<li> 3700 – Nickel reduction</li>
-		<li> 5900 – AMSUL plant</li>
-<li> 3600 – sulphide leaching</li>
-<li> 5200 – anhydrous ammonia storage</li>
-<li> 3900 – pH control</li>
-<li> Released from high pH solutions rather than flares </li>
-	</ul>
-	</td>
-</tr>
-</table>
+    </ul>
+</p>
 </div>
+
+<div class="quiz-container">
+  <h2>HazmatQuiz</h2>
+<div class="question">
+    <p>1. What is the minimum initial stand-off distance for a HAZMAT incident?</p>
+    <label><input type="radio" name="q1" value="0">20m</label><br>
+    <label><input type="radio" name="q1" value="0">50m</label><br>
+    <label><input type="radio" name="q1" value="1">70m</label><br>
+    <label><input type="radio" name="q1" value="0">100m</label><br>
+</div>
+
+<div class="question">
+    <p>2. Where should appliances ideally be parked at a HAZMAT incident?</p>
+    <label><input type="radio" name="q2" value="0">Downhill and downwind</label><br>
+    <label><input type="radio" name="q2" value="1">Uphill and upwind</label><br>
+    <label><input type="radio" name="q2" value="0">Near storm drains</label><br>
+    <label><input type="radio" name="q2" value="0">Inside the hot zone</label><br>
+</div>
+
+<div class="question">
+    <p>3. What can be used to identify chemicals from a safe distance?</p>
+    <label><input type="radio" name="q3" value="0">Binoculars</label><br>
+    <label><input type="radio" name="q3" value="0">Emergency Information Panels</label><br>
+    <label><input type="radio" name="q3" value="0">ERG phone app</label><br>
+    <label><input type="radio" name="q3" value="1">All of the above</label><br>
+</div>
+
+<div class="question">
+    <p>4. What does HAG stand for?</p>
+    <label><input type="radio" name="q4" value="0">Hazard Action Group</label><br>
+    <label><input type="radio" name="q4" value="1">HAZMAT Action Guide</label><br>
+    <label><input type="radio" name="q4" value="0">Hazard Assessment Guide</label><br>
+    <label><input type="radio" name="q4" value="0">Hazardous Area Guide</label><br>
+</div>
+
+<div class="question">
+    <p>5. What does the first letter of a HAZCHEM code indicate?</p>
+    <label><input type="radio" name="q5" value="0">Hazard class</label><br>
+    <label><input type="radio" name="q5" value="1">PPE required and whether to dilute or contain</label><br>
+    <label><input type="radio" name="q5" value="0">The UN number</label><br>
+    <label><input type="radio" name="q5" value="0">Evacuation distance</label><br>
+</div>
+
+<div class="question">
+    <p>6. What does the second letter of a HAZCHEM code indicate?</p>
+    <label><input type="radio" name="q6" value="0">Type of foam required</label><br>
+    <label><input type="radio" name="q6" value="0">Required gas detector</label><br>
+    <label><input type="radio" name="q6" value="1">Evacuation should be considered</label><br>
+    <label><input type="radio" name="q6" value="0">Amount of water to use</label><br>
+</div>
+
+<div class="question">
+    <p>7. What is the purpose of the hot zone?</p>
+    <label><input type="radio" name="q7" value="0">Medical treatment area</label><br>
+    <label><input type="radio" name="q7" value="1">Area where contamination has occurred</label><br>
+    <label><input type="radio" name="q7" value="0">Equipment storage area</label><br>
+    <label><input type="radio" name="q7" value="0">Area for media briefings</label><br>
+</div>
+
+<div class="question">
+    <p>8. What PPE level uses a fully encapsulated suit with BA inside?</p>
+    <label><input type="radio" name="q8" value="0">Level 1</label><br>
+    <label><input type="radio" name="q8" value="0">Level 2</label><br>
+    <label><input type="radio" name="q8" value="1">Level 3</label><br>
+    <label><input type="radio" name="q8" value="0">Level 4</label><br>
+</div>
+
+<div class="question">
+    <p>9. What principle should responders follow at HAZMAT incidents?</p>
+    <label><input type="radio" name="q9" value="0">Maximum exposure</label><br>
+    <label><input type="radio" name="q9" value="1">Least exposure</label><br>
+    <label><input type="radio" name="q9" value="0">Rapid entry</label><br>
+    <label><input type="radio" name="q9" value="0">Continuous offensive attack</label><br>
+</div>
+
+<div class="question">
+    <p>10. What is an overdrum used for?</p>
+    <label><input type="radio" name="q10" value="0">Measuring toxic gases</label><br>
+    <label><input type="radio" name="q10" value="1">Containing small leaking barrels</label><br>
+    <label><input type="radio" name="q10" value="0">Ventilating confined spaces</label><br>
+    <label><input type="radio" name="q10" value="0">Holding firefighting foam</label><br>
+</div>
+
+<div class="question">
+    <p>11. Where does decontamination occur?</p>
+    <label><input type="radio" name="q11" value="0">Hot zone</label><br>
+    <label><input type="radio" name="q11" value="1">Warm zone</label><br>
+    <label><input type="radio" name="q11" value="0">Cold zone</label><br>
+    <label><input type="radio" name="q11" value="0">Safe haven</label><br>
+</div>
+
+<div class="question">
+    <p>12. When should dry decontamination be used?</p>
+    <label><input type="radio" name="q12" value="0">When there is no water supply</label><br>
+    <label><input type="radio" name="q12" value="1">When chemicals react unfavourably with water</label><br>
+    <label><input type="radio" name="q12" value="0">For radioactive materials only</label><br>
+    <label><input type="radio" name="q12" value="0">Only during training exercises</label><br>
+</div>
+
+<div class="question">
+    <p>13. During wet decontamination, which casualty should be decontaminated first in a team of two?</p>
+    <label><input type="radio" name="q13" value="0">The team leader</label><br>
+    <label><input type="radio" name="q13" value="1">The person with less air remaining</label><br>
+    <label><input type="radio" name="q13" value="0">The tallest person</label><br>
+    <label><input type="radio" name="q13" value="0">The least contaminated person</label><br>
+</div>
+
+<div class="question">
+    <p>14. Which hazard class covers corrosive substances?</p>
+    <label><input type="radio" name="q14" value="0">Class 5</label><br>
+    <label><input type="radio" name="q14" value="0">Class 6</label><br>
+    <label><input type="radio" name="q14" value="0">Class 7</label><br>
+    <label><input type="radio" name="q14" value="1">Class 8</label><br>
+</div>
+
+<div class="question">
+    <p>15. Which hazard class covers flammable liquids?</p>
+    <label><input type="radio" name="q15" value="0">Class 2</label><br>
+    <label><input type="radio" name="q15" value="1">Class 3</label><br>
+    <label><input type="radio" name="q15" value="0">Class 4</label><br>
+    <label><input type="radio" name="q15" value="0">Class 9</label><br>
+</div>
+  <button onclick="checkAnswers()">Submit</button>
+
+  <p id="result"></p>
 <footer>
     <p>Disclaimer: This website is for informational purposes only and is not affiliated with any registered training organization (RTO)</p>
 </footer>
