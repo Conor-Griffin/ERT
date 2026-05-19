@@ -41,6 +41,10 @@ body {
         @media (max-width: 900px) {
     header {
         position: static !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
     }
     }
 
