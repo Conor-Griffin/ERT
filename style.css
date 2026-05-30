@@ -12,7 +12,7 @@ div {
 }
 
 a {
-    color: black;
+    color: #0d1b2a;
     text-decoration: none;
 }
 a:hover {
@@ -29,9 +29,9 @@ a:hover {
     .grid-item {
       font-size: 3rem;
       background-color: rgba(129, 120, 107, 0.319);
-      border: 5px solid black;
+      border: 5px solid #0d1b2a;
       border-radius: 20px;
-      color:black;
+      color:#0d1b2a;
       overflow: hidden;
     }
 
