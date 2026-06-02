@@ -55,12 +55,12 @@ header {
     background-color: #0d1b2a;
     text-align: center;
     padding:5px;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: var(--header-height);
 }
 
 @media (max-width: 900px) {
@@ -98,7 +98,7 @@ body {
     nav a {
         margin: 0 10px;
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
 footer {
@@ -113,4 +113,54 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: var(--header-height);
+    height: calc(100vh - var(--header-height));
+
+    background: #13273A;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#searchInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display:none;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+:root {
+    --header-height: 120px;
 }
